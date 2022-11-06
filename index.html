@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICHIGAN APPLE WEBSITE</title>
+    <link rel="shortcut icon" href="img/apple-logo-24.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- BOX ICON LINK -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ION ICONS -->
+    <ion-icon src="/path/to/external/file.svg"></ion-icon>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- Libre Franklin Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+    <!-- inter font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <header>
+        <div class="nav-container">
+        <nav>
+            <ul class="mobile-nav">
+                <li>
+                    <div class="menu-icon-container">
+                        <div class="menu-icon">
+                            <span class="line-1"></span>
+                            <span class="line-2"></span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="index.html" class="link-logo"></a>
+                </li>
+                <div class="bag-mood">
+                    <li>
+                        <i id="NightBtn" class='bx bxs-moon bx-tada' style='color:#ffffff' ></i>
+                        <!-- <i id="NightBtn" class='bx bxs-sun bx-tada sun' style='color:#ffffff' ></i> -->
+                    </li>
+                    <li>
+                        <a href="" class="link-bag" onclick="toggleMenu()"></a>
+                    </li>
+                </div>
+            </ul>
+
+            <ul class="desktop-nav">
+                <li>
+                    <a href="index.html" class="link-logo"></a>
+                </li>
+                <li>
+                    <a href="macbook.html">Mac</a>
+                </li>
+                <li>
+                    <a href="#">iPad</a>
+                </li>
+                <li>
+                    <a href="#">iPhone</a>
+                </li>
+                <li>
+                    <a href="#">Watch</a>
+                </li>
+                <li>
+                    <a href="#">TV</a>
+                </li>
+                <li>
+                    <a href="#">Music</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#" class="link-search"></a>
+                </li>
+                <li>
+                    <i id="NightBtn" class='bx bxs-moon bx-tada' style='color:#ffffff' ></i>
+                    <!-- <i id="NightBtn" class='bx bxs-sun bx-tada sun' style='color:#ffffff' ></i> -->
+                </li>
+                <li>
+                    <a href="#" class="link-bag" onclick="toggleMenu()"></a>
+                </li>
+            </ul>
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                  <div class="user-info">
+                    <p class="p1">Your bag is empty.</p>
+                  </div>
+                  <br />
+                  <hr>
+                      <a href="#" class="sub-menu-link">
+                          <img src="img/bag.svg" alt="">
+                          <p>Bag</p>
+                      </a>
+                      <hr>
+                      <a href="#" class="sub-menu-link">
+                          <img class="savedimg" src="img/saved.svg" alt="">
+                          <p>Favorite</p>
+                      </a>
+                      <hr>
+                      <a href="#" class="sub-menu-link">
+                          <img src="img/orders.svg" alt="">
+                          <p>Orders</p>
+                      </a>
+                      <hr>
+                      <a href="#" class="sub-menu-link">
+                          <img src="img/account.svg" alt="">
+                          <p>Account</p>
+                      </a>
+                      <hr>
+                      <a href="#" class="sub-menu-link">
+                       <img src="img/sign.svg" alt="">
+                          <p>Sign in</p>
+                      </a>
+                </div>
+              </div>
+        </nav>
+        <img src="./images/macair video.mp4" alt="">
+
+        <!-- End of navigation menu items -->
+
+        <div class="search-container hide">
+            <div class="link-search"></div>
+            <div class="search-bar">
+                <form action="">
+                    <input type="text" placeholder="Search apple.com">
+                </form>
+            </div>
+            <div class="link-close"></div>
+
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <a href="#">Visiting an Apple Store FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop Apple Store Online</a>
+                    </li>
+                    <li>
+                        <a href="#">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#">AirPods</a>
+                    </li>
+                    <li>
+                        <a href="#">AirTag</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-search-container">
+            <div class="link-search"></div>
+            <div class="search-bar">
+                <form action="">
+                    <input type="text" placeholder="Search apple.com">
+                </form>
+            </div>
+            <span class="cancel-btn">Cancel</span>
+
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <a href="#">Visiting an Apple Store FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop Apple Store Online</a>
+                    </li>
+                    <li>
+                        <a href="#">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#">AirPods</a>
+                    </li>
+                    <li>
+                        <a href="#">AirTag</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </div>
+   </div>
+
+    <div class="overlay"></div>
+    </header>
+   
+    <a href="macbook.html">
+        <section id="landpage">
+            <div class="landpagetextandlink">
+                <h1 id="landHeading">MacBook Air</h1>
+                <img class="landsupercharge" src="img/superchargedtextandimage.png" alt="">
+                <p class="land_check_text">Check back for availability</p>
+               <a href="" class="learnmore">
+                    <p>Learn more</p>
+                    <i class='bx bx-chevron-right'></i>
+               </a>
+            </div>
+            <div class="landpagelaptopimage" data-aos="fade-left" data-aos-duration="2000">
+                <img src="img/landpagelaptop.png" alt="" width="100%">
+            </div>
+        </section>
+    </a>
+
+    <section id="macBookPro13">
+        <div class="macBook13">
+            <h1>MacBook Pro 13''</h1>
+            <img src="img/superchargedtwo.png" alt="">
+            <a href="" class="learnmore pro13">
+                <p>Learn more</p>
+                <i class='bx bx-chevron-right'></i>
+           </a>
+        </div>
+        <div data-aos="fade-up" class="macccc" data-aos-duration="2000">
+            <img class="macBookPro13img" src="img/MacBookpro13image.png" alt="">
+        </div>
+    </section>
+
+
+    <section id="iphone13">
+        <div class="iphone13imageandtext">
+                <h1 id="iphone13-heading">iPhone 13</h1>
+                <p id="superpower">Your new superpower</p>
+                <br>
+                <a href="" class="learnmore">   
+                    <p>Learn more</p>
+                    <i class='bx bx-chevron-right'></i>
+               </a>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000">
+            <img class="iphone13-image"  src="img/iphone13proimageslanty-removebg-preview.png" alt="">
+        </div>
+    </section>
+
+    <section id="iphone13ipad">
+        <div id="ipadAir">
+            <div class="ipadAir_first-div" data-aos="fade-down" data-aos-duration="1000">
+                <div class="ipadair_heading-air">
+                    <h3 class="ipadAir_first-div_heading">iPad</h3>
+                    <img src="img/airimage.png" width="60px">
+                </div>
+                <p class="ipadAir_first-div_paragraph">Light. Bright. Full of might</p>
+                <a href="" class="learnmore" style="opacity: 0.8;">
+                    <p>Learn more</p>
+                    <i class='bx bx-chevron-right'></i>
+               </a>
+            </div>
+            <div class="ipadAir_image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="img/ipad air image.png" alt="" width="100%">
+            </div>
+        </div>
+        <div id="iphone13Pro">
+            <div class="iphone13Pro_firstdiv" data-aos="fade-down" data-aos-duration="1000">
+                <h1 id="iphone13Pro_heading">iPhone 13 Pro</h1>
+                <p id="iphone13Pro-paragraph">Oh. So. Pro</p>
+                <a href="" class="learnmore">
+                    <p>Learn more</p>
+                    <i class='bx bx-chevron-right'></i>
+               </a>
+            </div>
+            <div class="iphone13Pro_image" data-aos="fade-up" data-aos-duration="2000">
+                <img src="img/iphonethirteenproimagefacetoface.png" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+    <section id="ipad-mini_iphone">
+        <div id="ipad-mini">
+            <div class="ipad-mini_div-one">
+                <div class="ipad-mini_h1-img">
+                    <h2 id="ipad-mini-heading">iPad</h2>
+                    <img src="img/minitext.png" alt="" width="60px">
+                </div>
+                <p id="ipad-mini-paragraph">Mega power. Mini sized</p>
+                <a href="" class="learnmore">
+                    <p>Learn more</p>
+                    <i class='bx bx-chevron-right'></i>
+               </a>
+            </div>
+            <div class="ipad-mini_image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="img/ipadminiimagewithhand.png" alt="" width="100%">
+            </div>
+        </div>
+        <div id="iphone">
+            <img data-aos="fade-left" data-aos-duration="2000" src="img/iphonesedoublephone.png" alt="" width="100%">
+        </div>
+    </section>
+    <section id="airpods_airtags">
+        <div id="airpods">
+            <div data-aos="zoom-in" data-aos-duration="2000" class="airpods_image">
+                <img src="img/airpodsimage.png" alt="" width="100%">
+            </div>
+            <div class="airpods_contents">
+                <h1 id="airpods_heading">AirPods</h1>
+                <p id="airpods_paragraph">All-new with Sparcial Audio</p>
+                <a href="" class="learnmore">
+                    <p>Learn more</p>
+                    <i class='bx bx-chevron-right'></i>
+               </a>
+            </div>
+        </div>
+        <div id="airtags">
+            <div class="airtags_div-one">
+                <h1 id="airtags_div-one_heading">AirTag</h1>
+                <p id="airtags-paragraph">Loose your Knack for loosing things</p>
+                <a href="" class="learnmore">
+                    <p>Learn more</p>
+                    <i class='bx bx-chevron-right'></i>
+               </a>
+            </div>
+            <div class="airtag-img" data-aos="fade-up" data-aos-duration="2000">
+                <img src="img/airtag.png" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+    <footer id="macfooter">
+        
+            <section class="Footer_Contents" id="fpara">
+                <div class="Footer_Contents-link">
+                    <div class="footer-heading-links">
+                        <div class="headingandicon">
+                            <h1>Explore</h1>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <!-- <hr class="linkshr"> -->
+                        <div class="footer-links">
+                            <p >Mac</p>
+                            <p >iPad</p>
+                            <p >iPhone</p>
+                            <p >Music</p>
+                            <p >AirPods</p>
+                            <p >AirTag</p>
+                        </div>
+                    </div>
+                    <div class="footer-heading-links">
+                        <div class="headingandicon">
+                            <h1>Services</h1>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div class="footer-links">
+                            <p >Apple Music</p>
+                            <p >Apple Arcade</p>
+                            <p >iCloud</p>
+                        </div>
+                    </div>
+                    <div class="footer-heading-links">
+                        <div class="headingandicon">
+                            <h1>Account</h1>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div class="footer-links">
+                            <p >Manage Your Apple ID</p>
+                            <p >iCloud.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-heading-links">
+                        <div class="headingandicon">
+                            <h1>About Apple</h1>
+                            <i class='bx bx-plus'></i>
+                        </div>
+                        <div class="footer-links">
+                            <p >Newsroom</p>
+                            <p >Apple Leadership</p>
+                            <p >Career Opportunities</p>
+                            <p >Investors</p>
+                            <p >AirPods</p>
+                            <p >Ethics & Compliance</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="footerfindtext">
+                    <h1> <span>Find a retailer </span> near you.</h1>
+                </div>
+            </section>
+            <hr class="footerhr2">
+            <div id="footerfinaldiv">
+                <div class="footerfinaldiv1">
+                 <p>Copyright</p>
+                <p>2022 Apple Inc. All rights reserved</p>
+                <p >Terms of use</p>
+                <p>Site map</p>
+                </div>
+                <div>
+                    <p >Nigeria</p>
+                </div>
+            </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
